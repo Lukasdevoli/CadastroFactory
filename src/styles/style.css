@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("../assets/wallpaper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container1 {
+  display: flex;
+  width: 90%;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.img-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+}
+
+.img-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.form-box {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(40px);
+  padding: 30px 40px;
+  width: 50%;
+  border-radius: 0 20px 20px 0;
+}
+
+.form-box h2 {
+  font-size: 30px;
+}
+
+.form-box p {
+  font-weight: bold;
+  color: #3d3d3d;
+}
+
+.form-box p a {
+  color: teal;
+  text-decoration: none;
+}
+
+.form-box form {
+  margin: auto 0;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  color: #3d3d3d;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 47px;
+  background-color: rgba(255, 255, 255, 0.32);
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid transparent;
+  padding: 15px;
+  font-size: 15px;
+  color: #616161;
+  transition: all 0.4s ease;
+}
+
+.input-group button {
+  width: 100%;
+  height: 47px;
+  background: forestgreen;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.w50 {
+  flex: 1;
+  padding-right: 0;
+}
+
+
+.lista-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.cadastro-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.acoes-cadastro {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.acoes-cadastro button:hover {
+  background-color: #014f4f;
+}
+
+.info-cadastro p {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+.acoes-cadastro {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.btn-editar {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-editar:hover {
+    background-color: #0b7dda;
+}
+
+.btn-deletar {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-deletar:hover {
+    background-color: #c62828;
+}
+
+.botoes-navegacao {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-navegacao {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: forestgreen;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-navegacao:hover {
+  background-color: #006666;
+}
+
+.botoes-navegacao2{
+  align-items: center;
+  margin-left: 5px;
+}
