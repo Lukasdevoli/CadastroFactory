@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro aluno</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <!--TELA CADASTROS--> 
+    <div id="telaCadastro">
+        <div class="container1">
+            <div class="img-container">
+                <img src="src/assets/img_cont.png" alt="Imagem ilustrativa">
+                <div class="botoes-navegacao">
+                    <button type="button" class="btn-navegacao" onclick="mostrarTelaCadastro()">Cadastro</button>
+                    <button type="button" class="btn-navegacao" onclick="mostrarTelaLista()">Ver Cadastros</button>
+                </div>
+            </div>
+            
+            <div class="form-box">
+                <h2> Criar Conta</h2>
+                <p>Já é um membro ? <a href="#"> Login </a></p>    
+                <form id="formCadastro">
+                    <div class="input-group">
+                        <label for="nome"> Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Digite o seu nome completo" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email"> E-mail</label>
+                        <input type="email" id="email" placeholder="Digite o seu e-mail" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="dataNascimento">Data de Nascimento</label>
+                        <input type="date" id="dataNascimento" placeholder="Insira sua data de nascimento" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="telefone"> Telefone </label>
+                        <input type="tel" id="telefone" placeholder="Digite o seu telefone" required>
+                    </div>
+
+                <div class="row">
+                    <div class="input-group w50">
+                        <label for="senha"> Senha</label>
+                        <input type="password" id="senha" placeholder="Digite o sua senha" required>
+                    </div>
+
+                    <div class="input-group w50">
+                        <label for="confirmarsenha"> Confirmar Senha</label>
+                        <input type="password" id="confirmarsenha" placeholder="Confirme a senha" required>
+                    </div>
+                </div>
+
+                    <div class="input-group">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+
+                </form>
+                
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <!--Tela Lista de Cadastros-->
+    <div id="telaLista" style="display: none;">
+        <div class="botoes-navegacao2">
+            <button type="button" class="btn-navegacao" onclick="mostrarTelaCadastro()">Cadastro</button>
+            <button type="button" class="btn-navegacao" onclick="mostrarTelaLista()">Ver Cadastros</button>
+            
+        </div>
+
+        <div class="lista-container">
+            <h2>Lista de Cadastros</h2>
+            <div id="lista-cadastros"></div>
+        </div>
+    </div>
+
+
+    <script src="src/scripts/index.js"></script>
+</body>
+</html>
